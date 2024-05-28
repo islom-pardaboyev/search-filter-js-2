@@ -21,17 +21,16 @@ fetch('https://jsonplaceholder.typicode.com/posts')
             const contentDiv = document.createElement('div');
             contentDiv.classList.add('col-span-4');
             contentDiv.innerHTML = `
-                    <p>ID: ${post.id}</p>
-                    <h1>Title: ${post.title}</h1>
-                    <p>Body: ${post.body}</p>
-                    `;
+                <p>ID: ${post.id}</p>
+                <h1>Title: ${post.title}</h1>
+                <p>Body: ${post.body}</p>
+            `;
 
             postsCon.appendChild(contentDiv);
 
-            post.element = contentDiv
+            post.element = contentDiv;
 
             return post;
         });
-        console.log(data);
     })
     .catch(err => console.log(err));
