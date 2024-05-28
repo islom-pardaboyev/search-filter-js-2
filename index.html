@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Search JS</title>
+</head>
+
+<body>
+
+    <div class="text-center container flex items-center justify-between">
+        <label for="searchInput">Search</label>
+        <input type="text" id="searchInput" class="input">
+    </div>
+
+    <main class="container grid grid-cols-12 gap-6" id="postsCon">
+
+    </main>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
+                    },
+                },
+                extend: {
+                    colors: {
+
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
